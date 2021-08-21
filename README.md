@@ -7,6 +7,7 @@ This `build.sh` creates a docker image with the OpenWRT SDK of your choice, that
 * zoobab/openwrtsdk:21.02.0-rc4-sunxi-cortexa8
 * zoobab/openwrtsdk:21.02.0-rc4-sunxi-cortexa7
 * zoobab/openwrtsdk:21.02.0-rc4-sunxi-cortexa53
+* zoobab/openwrtsdk:21.02.0-rc4-x86-generic
 
 ## Screenshot
 
