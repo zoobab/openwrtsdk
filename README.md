@@ -6,7 +6,7 @@ This `build.sh` creates a docker image with the OpenWRT SDK of your choice, that
 ## Screenshot
 
 ```
- ./build.sh
+$ ./build.sh
 Usage: ./build.sh arch subarch relver
 Example: ./build.sh sunxi cortexa8 21.02.0-rc4
 
