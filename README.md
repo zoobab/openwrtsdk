@@ -6,6 +6,10 @@ This `build.sh` creates a docker image with the OpenWRT SDK of your choice, that
 ## Screenshot
 
 ```
+ ./build.sh
+Usage: ./build.sh arch subarch relver
+Example: ./build.sh sunxi cortexa8 21.02.0-rc4
+
 $ ./build.sh sunxi cortexa8 21.02.0-rc4
 Sending build context to Docker daemon  76.29kB
 Step 1/24 : FROM alpine:3.14
