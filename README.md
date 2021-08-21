@@ -1,6 +1,6 @@
 # OpenWRT PPA: How to build the SDK docker image
 
-This `build.sh` creates a docker image with the OpenWRT SDK of your choice, that can be reused/cached with the `openwrtsdkbuild` repo.
+This `build.sh` creates a docker image with the OpenWRT SDK of your choice, that can be reused/cached with the `openwrtsdkbuild` repo (see https://github.com/zoobab/openwrtsdkbuild).
 
 
 ## Screenshot
