@@ -25,14 +25,14 @@ ARG arch
 ARG subarch
 ARG relver
 ENV SDK_URL https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl_eabi.Linux-x86_64.tar.xz
-#ENV SDK_URL https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl.Linux-x86_64.tar.xz
+ENV SDK_URL2 https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl.Linux-x86_64.tar.xz
 ENV SDK_SUFFIX .tar.xz
 
 WORKDIR /home/$USR
-RUN wget -nv $SDK_URL &&\
-    tar xf "$(basename $SDK_URL)" &&\
-    rm "$(basename $SDK_URL)" &&\
-    mv "$(basename $SDK_URL $SDK_SUFFIX)" sdk &&\
+RUN wget -nv $SDK_URL || wget -nv $SDK_URL2 && export TARFILE="$(ls -1 *$SDK_SUFFIX)" &&\
+    tar xf $TARFILE &&\
+    rm $TARFILE &&\
+    mv "$(basename $TARFILE $SDK_SUFFIX)" sdk &&\
     ln -s ../feeds/base/package/utils sdk/package/utils
 #COPY config.buildinfo /home/$USR/sdk/.config
 COPY lighttpd.conf /etc/lighttpd/lighttpd.conf
