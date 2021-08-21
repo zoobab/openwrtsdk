@@ -2,9 +2,9 @@
 
 This `build.sh` creates a docker image with the OpenWRT SDK of your choice, that can be reused/cached with the `openwrtsdkbuild` repo (see https://github.com/zoobab/openwrtsdkbuild).
 
-## Available docker images
+## Available docker images on the Docker Hub
 
-* [https://hub.docker.com/layers/zoobab/openwrtsdk/21.02.0-rc4-sunxi-cortexa8/images/sha256-cd7e159eef2942f842ceb5acd23dfdc12e8c49fbd8cb8da5f3ebf791d4c3a81a?context=explore](zoobab/openwrtsdk:21.02.0-rc4-sunxi-cortexa8)
+* zoobab/openwrtsdk:21.02.0-rc4-sunxi-cortexa8
 
 ## Screenshot
 
