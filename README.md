@@ -296,3 +296,4 @@ zoobab/openwrtsdk                       21.02.0-rc4-x86-64           c710087cb0e
 ## Problems
 
 * How to handle the `eabi` which is not present in the URLs for x86?
+* Generate all docker images with all SDKs with a script
