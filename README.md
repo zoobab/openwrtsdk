@@ -143,13 +143,139 @@ Collecting target info: done
 Updating feed 'packages' from 'https://git.openwrt.org/feed/packages.git^49b1a6f4cc6e265cb98eb3d3225aca96079d1ec0' ...
 Cloning into './feeds/packages'...
 Switched to a new branch '49b1a6f4cc6e265cb98eb3d3225aca96079d1ec0'
+
 /home/openwrt/sdk
-Create index file './feeds/packages.index'
+Create index file './feeds/luci.index'
 Collecting package info: done
 Collecting target info: done
-Updating feed 'luci' from 'https://git.openwrt.org/project/luci.git^132c72c7b75b7c69ec713cd9c44b7566da7f052a' ...
-Cloning into './feeds/luci'...
-
+Updating feed 'routing' from 'https://git.openwrt.org/feed/routing.git^e7e25b873b8ed4376cdcf82f963db34dda954f02' ...
+Cloning into './feeds/routing'...
+Switched to a new branch 'e7e25b873b8ed4376cdcf82f963db34dda954f02'
+/home/openwrt/sdk
+Create index file './feeds/routing.index'
+Collecting package info: done
+Collecting target info: done
+Updating feed 'telephony' from 'https://git.openwrt.org/feed/telephony.git^aa1954024371e02d985b51ec4187fc0745ab4e18' ...
+Cloning into './feeds/telephony'...
+Switched to a new branch 'aa1954024371e02d985b51ec4187fc0745ab4e18'
+/home/openwrt/sdk
+Create index file './feeds/telephony.index'
+Collecting package info: done
+Collecting target info: done
+Removing intermediate container e7cce982e44e
+ ---> 6861dd3aa278
+Step 24/24 : RUN make defconfig
+ ---> Running in be067bd59dff
+WARNING: Makefile 'package/utils/adb/Makefile' has a dependency on 'zlib', which does not exist
+WARNING: Makefile 'package/utils/adb/Makefile' has a dependency on 'libopenssl', which does not exist
+WARNING: Makefile 'package/utils/busybox/Makefile' has a dependency on 'libpam', which does not exist
+WARNING: Makefile 'package/utils/busybox/Makefile' has a dependency on 'libpam', which does not exist
+WARNING: Makefile 'package/utils/busybox/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/busybox/Makefile' has a build dependency on 'libpam', which does not exist
+WARNING: Makefile 'package/utils/checkpolicy/Makefile' has a build dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/checkpolicy/Makefile' has a build dependency on 'libselinux/host', which does not exist
+WARNING: Makefile 'package/utils/f2fs-tools/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/f2fs-tools/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/f2fs-tools/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/f2fs-tools/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/fritz-tools/Makefile' has a dependency on 'zlib', which does not exist
+WARNING: Makefile 'package/utils/jsonfilter/Makefile' has a dependency on 'libubox', which does not exist
+WARNING: Makefile 'package/utils/jsonfilter/Makefile' has a dependency on 'libjson-c', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'eip197-mini-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'r8169-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'e100-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'bnx2-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'bnx2x-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'ar3k-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'mwifiex-sdio-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'kmod-phy-bcm-ns-usb2', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'edgeport-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'kmod-phy-bcm-ns-usb3', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'amdgpu-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'radeon-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'prism54-firmware', which does not exist
+WARNING: Makefile 'package/kernel/linux/Makefile' has a dependency on 'rtl8192su-firmware', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libsepol', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libaudit', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libsepol', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libaudit', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libaudit', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libpam', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libsemanage', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libaudit', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libpam', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libsemanage', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libselinux', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libsemanage', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libsepol', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a dependency on 'libintl-full', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a build dependency on 'libpam', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a build dependency on 'gettext-full/host', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a build dependency on 'libiconv', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a build dependency on 'gettext', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a build dependency on 'libsemanage/host', which does not exist
+WARNING: Makefile 'package/utils/policycoreutils/Makefile' has a build dependency on 'gettext-full/host', which does not exist
+WARNING: Makefile 'package/utils/px5g-mbedtls/Makefile' has a dependency on 'libmbedtls', which does not exist
+WARNING: Makefile 'package/utils/px5g-wolfssl/Makefile' has a dependency on 'libwolfssl', which does not exist
+WARNING: Makefile 'package/utils/secilc/Makefile' has a dependency on 'libsepol', which does not exist
+WARNING: Makefile 'package/utils/secilc/Makefile' has a build dependency on 'libiconv', which does not exist
+WARNING: Makefile 'package/utils/secilc/Makefile' has a build dependency on 'gettext', which does not exist
+WARNING: Makefile 'package/utils/secilc/Makefile' has a build dependency on 'libsepol/host', which does not exist
+WARNING: Makefile 'package/utils/ugps/Makefile' has a dependency on 'libubox', which does not exist
+WARNING: Makefile 'package/utils/ugps/Makefile' has a dependency on 'libubus', which does not exist
+WARNING: Makefile 'package/utils/usbmode/Makefile' has a dependency on 'libubox', which does not exist
+WARNING: Makefile 'package/utils/usbmode/Makefile' has a dependency on 'libblobmsg-json', which does not exist
+WARNING: Makefile 'package/utils/usbmode/Makefile' has a dependency on 'libusb-1.0', which does not exist
+WARNING: Makefile 'package/utils/util-linux/Makefile' has a dependency on 'libncurses', which does not exist
+WARNING: Makefile 'package/utils/util-linux/Makefile' has a dependency on 'libncurses', which does not exist
+WARNING: Makefile 'package/utils/util-linux/Makefile' has a dependency on 'libncursesw', which does not exist
+WARNING: Makefile 'package/utils/util-linux/Makefile' has a dependency on 'libncursesw', which does not exist
+WARNING: Makefile 'package/utils/util-linux/Makefile' has a dependency on 'libncurses', which does not exist
+WARNING: Makefile 'package/utils/util-linux/Makefile' has a dependency on 'libncurses', which does not exist
+WARNING: Makefile 'package/utils/util-linux/Makefile' has a dependency on 'libncursesw', which does not exist
+tmp/.config-package.in:26:warning: ignoring type redefinition of 'PACKAGE_busybox' from 'bool' to 'tristate'
+tmp/.config-package.in:60:warning: ignoring type redefinition of 'PACKAGE_jsonfilter' from 'bool' to 'tristate'
+tmp/.config-package.in:139:warning: ignoring type redefinition of 'PACKAGE_libc' from 'bool' to 'tristate'
+tmp/.config-package.in:167:warning: ignoring type redefinition of 'PACKAGE_libgcc' from 'bool' to 'tristate'
+tmp/.config-package.in:288:warning: ignoring type redefinition of 'PACKAGE_libpthread' from 'bool' to 'tristate'
+tmp/.config-package.in:316:warning: ignoring type redefinition of 'PACKAGE_librt' from 'bool' to 'tristate'
+tmp/.config-package.in:597:warning: ignoring type redefinition of 'PACKAGE_lua' from 'bool' to 'tristate'
+tmp/.config-package.in:697:warning: ignoring type redefinition of 'PACKAGE_libblkid' from 'bool' to 'tristate'
+tmp/.config-package.in:713:warning: ignoring type redefinition of 'PACKAGE_libcomerr' from 'bool' to 'tristate'
+tmp/.config-package.in:727:warning: ignoring type redefinition of 'PACKAGE_libext2fs' from 'bool' to 'tristate'
+tmp/.config-package.in:743:warning: ignoring type redefinition of 'PACKAGE_libf2fs' from 'bool' to 'tristate'
+tmp/.config-package.in:783:warning: ignoring type redefinition of 'PACKAGE_liblua' from 'bool' to 'tristate'
+tmp/.config-package.in:824:warning: ignoring type redefinition of 'PACKAGE_libsmartcols' from 'bool' to 'tristate'
+tmp/.config-package.in:837:warning: ignoring type redefinition of 'PACKAGE_libss' from 'bool' to 'tristate'
+tmp/.config-package.in:851:warning: ignoring type redefinition of 'PACKAGE_libuuid' from 'bool' to 'tristate'
+tmp/.config-package.in:1029:warning: ignoring type redefinition of 'PACKAGE_partx-utils' from 'bool' to 'tristate'
+tmp/.config-package.in:1105:warning: ignoring type redefinition of 'PACKAGE_px5g-wolfssl' from 'bool' to 'tristate'
+tmp/.config-package.in:1186:warning: ignoring type redefinition of 'PACKAGE_e2fsprogs' from 'bool' to 'tristate'
+tmp/.config-package.in:1318:warning: ignoring type redefinition of 'PACKAGE_mkf2fs' from 'bool' to 'tristate'
+#
+# configuration written to .config
+#
+Removing intermediate container be067bd59dff
+ ---> 4c77d1233e9f
+Successfully built 4c77d1233e9f
+Successfully tagged zoobab/openwrtsdk:21.02.0-rc4-sunxi-cortexa8
 ```
 
 ## Output
