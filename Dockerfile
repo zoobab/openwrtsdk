@@ -24,8 +24,8 @@ WORKDIR /home/$USR
 ARG arch
 ARG subarch
 ARG relver
-#ENV SDK_URL https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl_eabi.Linux-x86_64.tar.xz
-ENV SDK_URL https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl.Linux-x86_64.tar.xz
+ENV SDK_URL https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl_eabi.Linux-x86_64.tar.xz
+#ENV SDK_URL https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl.Linux-x86_64.tar.xz
 ENV SDK_SUFFIX .tar.xz
 
 WORKDIR /home/$USR
