@@ -26,10 +26,12 @@ ARG subarch
 ARG relver
 ENV SDK_URL https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl_eabi.Linux-x86_64.tar.xz
 ENV SDK_URL2 https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}-${subarch}_gcc-8.4.0_musl.Linux-x86_64.tar.xz
+ENV SDK_URL3 https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}_gcc-8.4.0_musl.Linux-x86_64.tar.xz
+ENV SDK_URL4 https://downloads.openwrt.org/releases/${relver}/targets/${arch}/${subarch}/openwrt-sdk-${relver}-${arch}_gcc-8.4.0_musl_eabi.Linux-x86_64.tar.xz
 ENV SDK_SUFFIX .tar.xz
 
 WORKDIR /home/$USR
-RUN wget -nv $SDK_URL || wget -nv $SDK_URL2 && export TARFILE="$(ls -1 *$SDK_SUFFIX)" &&\
+RUN wget -nv $SDK_URL || wget -nv $SDK_URL2 || wget -nv $SDK_URL3 || wget -nv $SDK_URL4 && export TARFILE="$(ls -1 *$SDK_SUFFIX)" &&\
     tar xf $TARFILE &&\
     rm $TARFILE &&\
     mv "$(basename $TARFILE $SDK_SUFFIX)" sdk &&\
